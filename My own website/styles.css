@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0a192f;
+    color: #8892b0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    padding: 40px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: #64ffda;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    color: #ccd6f6;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    background-color: transparent;
+    color: #64ffda;
+    padding: 12px 30px;
+    border: 2px solid #64ffda;
+    border-radius: 4px;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-top: 30px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgba(100, 255, 218, 0.1);
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #ccd6f6;
+    margin-bottom: 50px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background-color: #112240;
+    border-radius: 4px;
+    padding: 30px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card h3 {
+    color: #e6f1ff;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    margin-bottom: 20px;
+}
+
+.project-card a {
+    color: #64ffda;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #020c1b;
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+    
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+}
+h1 {
+    font-family: 'Space Mono', monospace;
+    font-size: clamp(3rem, 10vw, 10rem);
+    color: white;
+    padding: 0 clamp(1rem, 2vw, 3rem);
+    border-radius: clamp(0.4rem, 0.75vw, 1rem);
+    transition: background-color 1s ease, color 1s ease;
+}
+
+h1:hover {
+    background-color: #00fffc;
+    color: black;
+    box-shadow: 0 0 20px #00fffc, 0 0 40px #00fffc, 0 0 60px #00fffc;
+    text-shadow: 0 0 10px #00fffc, 0 0 20px #00fffc, 0 0 30px #00fffc;
+}
